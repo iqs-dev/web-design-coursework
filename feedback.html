@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Links to font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<!--Link to CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Life Below Water</title>
+</head>
+
+<body>
+<!--Navbar-->
+    <nav>
+        <img src="images/logo.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="home.html" class="a-links">Home</a></li>
+            <li>Shop</li>
+            <li>Gallery</li>
+            <li>Team</li>
+        </ul>
+        <button class="nav-button"><a href="feedback.html" class="a-button"><b>Feedback</b></a></button>
+    </nav>
+
+<!--Feedback form-->
+    <div class="feedback-form">
+        <form action="https://formsubmit.co/w193224@westminster.ac.uk" method="POST" class="form">
+            <div class="form-title">
+                <h2>Feedback</h2>
+                <hr>
+            </div>
+
+            <label for="form-input">Full name:</label>
+            <input type="text" name="name" placeholder="Enter your name" class="form-input" required>
+
+            <label for="form-input">Email address:</label>
+            <input type="email" name="email" placeholder="Enter your email" class="form-input" required> 
+
+            <label>Was this website informative and easy to navigate?</label>
+            <div class="radio-buttons">
+                <input type="radio" name="decision" id="yes" class="decision">
+                <label for="yes">Yes</label> 
+                <input type="radio" name="decision" id="no" class="decision">
+                <label for="no">No</label>
+            </div>
+
+            <label>If "No", suggest any improvements for the future:</label>
+            <textarea name="message" placeholder="Your suggestions..." class="form-input"></textarea>
+
+            <label for="updates">Would you like to receive updates about Life Below Water and any special offers through email?</label>
+            <div class="updates-option">
+                <select name="updates" id="updates">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+            </select>
+            </div>
+
+            <label>Do you have any additional questions or requests?</label>
+            <textarea name="message" placeholder="Optional additional information" class="form-input"></textarea>
+
+            <input typpe="hidden" name="_next" value="https://feedback.html/thankyou.html">
+
+            <button type="submit"><b>Submit</b></button>
+        </form>
+    </div>
+
+<!--Footer-->
+<div class="footer">
+    <a href="iqrasPageEditor.html" target="_blank">Page Editor</a>
+</div>
+</body>
+</html>
